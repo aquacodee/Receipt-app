@@ -1,4 +1,3 @@
-# core/paystack.py
 import requests
 from django.conf import settings
 
