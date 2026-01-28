@@ -40,7 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'receipt_app',
     "rest_framework",
-]
+    ]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -125,3 +125,10 @@ STATIC_URL = 'static/'
 
 MEDIA_URL = 'media/'
 MEDIA_ROOT = BASE_DIR / 'media'
+
+AUTH_USER_MODEL = 'receipt_app.User'
+
+
+#payment integration
+PAYSTACK_SECRET_KEY = "sk_test_xxxxxxxxx"
+PAYSTACK_PUBLIC_KEY = "pk_test_xxxxxxxxx"
